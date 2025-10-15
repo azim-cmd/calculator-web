@@ -1,4 +1,7 @@
-let num;
+let num1;
+let num2;
+let operator;
+let result = 0;
 
 const btn7 = document.querySelector('#num7');
 const btn8 = document.querySelector('#num8');
@@ -45,10 +48,20 @@ btn6.addEventListener('click', () => {
 
 btn1.addEventListener('click', () => {
   console.log(btn1.innerText);
+  if(num1){
+    num2 = 1;
+  } else {
+    num1 = 1;
+  }
 })
 
 btn2.addEventListener('click', () => {
   console.log(btn2.innerText);
+  if(num1){
+    num2 = 2;
+  } else {
+    num1 = 2;
+  }
 })
 
 btn3.addEventListener('click', () => {
@@ -57,18 +70,22 @@ btn3.addEventListener('click', () => {
 
 addBtn.addEventListener('click', () => {
   console.log(addBtn.innerText);
+  operator = '+';
 })
 
 subtractBtn.addEventListener('click', () => {
   console.log(subtractBtn.innerText);
+  operator = '-';
 })
 
 multiplyBtn.addEventListener('click', () => {
   console.log(multiplyBtn.innerText);
+  operator = '*';
 })
 
 divideBtn.addEventListener('click', () => {
   console.log(divideBtn.innerText);
+  operator = '/';
 })
 
 deleteBtn.addEventListener('click', () => {
@@ -81,8 +98,32 @@ resetBtn.addEventListener('click', () => {
 
 isEqualToBtn.addEventListener('click', () => {
   console.log(isEqualToBtn.innerText);
+  if(operator === '+'){
+    result = num1 + num2;
+    console.log(result);
+  } else if(operator === '-'){
+    result = num1 - num2;
+    console.log(result);
+  }
 })
 
 decimalBtn.addEventListener('click', () => {
   console.log(decimalBtn.innerText);
 })
+
+
+/*
+
+1) webpage banana
+2) buttons banana
+3) buttons m functionality add karna
+4) webpage design karna
+
+3) buttons m functionality add karna : -
+  a) user number input karega
+  b) user operator input karega
+  c) operation perform karna
+  d) output display karna
+
+
+*/
