@@ -19,11 +19,12 @@
 .calculator{
   height: 80vh;
   width: 50vw;
-  background-color: gray;
+  background-color: darkgray;
 }
 
 .input-div{
   padding: 2vh;
+  background-color: darkgray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,10 +33,15 @@
 .input-section{
   height: 20vh;
   width: 50vw;
+  border: none;
+  border-radius: 5px;
+  background-color: lightgray;
+  font-size: 5vh;
+  direction: rtl;
 }
 
 .btn-section{
-  background-color: wheat;
+  background-color: darkgray;
 }
 
 .row{
@@ -48,4 +54,31 @@
   height: 10vh;
   width: 10vw;
   margin: 1vh;
+  border: none;
+  border-radius: 5px;
+  font-size: 7vh;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bg-orange{
+  background-color: orangered;
+}
+
+.btns:hover{
+  font-size: 8vh;
+}
+
+.btns:active{
+  background-color: orangered;
+}
+
+.bg-orange:active{
+  background-color: darkgray;
+}
+
+.corner-left{
+  display: flex;
+  justify-content: right;
+  padding: 0.7vw;
 }
