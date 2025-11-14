@@ -10,8 +10,13 @@ buttons.forEach((button) => {
     if(button.innerHTML === '='){
       inputString = eval(inputString);
       inputBox.innerHTML = inputString;
-    }
-    inputString = inputString + e.target.innerHTML;
+    } else if(button.innerHTML === 'C'){
+      inputString = '';
     inputBox.innerHTML = inputString;
+    } else{
+      inputString = inputString + e.target.innerHTML;
+    inputBox.innerHTML = inputString;
+    }
+    
   })
 })
